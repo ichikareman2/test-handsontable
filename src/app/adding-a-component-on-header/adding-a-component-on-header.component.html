@@ -1,0 +1,9 @@
+<hot-table #hottable *ngIf="hotSettings" [settings]="hotSettings" ></hot-table>
+<pre>{{ formGroup.value | json }}</pre>
+<div style="display: none;">
+  <ng-template #inputTemplate let-control="control">
+    <input type="text" [formControl]="control">
+  </ng-template>
+  
+  <template #temporary></template>
+</div>

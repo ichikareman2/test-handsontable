@@ -1,4 +1,8 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, EmbeddedViewRef, OnInit, TemplateRef, ViewChild, ViewContainerRef } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { HotTableComponent } from '@handsontable/angular';
+import Handsontable from 'handsontable';
+import { FilterInputComponent } from './filter-input/filter-input.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'test-handsontable';
+  // to test if needs to dispose
+  showFirst = true
 }
